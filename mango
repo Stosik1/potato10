@@ -1,19 +1,52 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
  <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   <title>Неправильное использование colspan</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Объединение ячеек</title>
  </head>
  <body>
-   <table border="1" cellpadding="5" width="100%">
+  <table border="1" cellpadding="4" cellspacing="0">
+   <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Parts</th>
+      </tr>
+      <tr>
+         <td rowspan='6'>SHIVA</td>
+        <td rowspan='2'>Maths</td>
+        <td>A</td> 
+      </tr>
+      <tr>
+         <td>B</td>
+      </tr>
     <tr>
-     <td colspan="2">Ячейка 1</td>
-     <td>Ячейка 2</td>
-    </tr>
+         <td rowspan='4'>Science</td>
+        
+        <td>A</td>
+          </tr>
     <tr>
-     <td>Ячейка 3</td>
-     <td>Ячейка 4</td>
-    </tr>
-   </table>
+         <td>B</td>
+      
+      </tr>
+       <tr>
+         <td>C</td>
+      </tr>
+       <tr></tr>
+       <tr>
+         <td rowspan='6'>RAM</td>
+        <td rowspan='2'>Maths</td>
+        <td>A</td>
+      </tr>
+        <tr>
+         <td>B</td>
+      </tr>
+       <tr>
+         <td rowspan='2'>Science</td>
+        <td>A</td>
+       
+      </tr>
+       <tr>
+         <td>B</td>
+ </tr>
+  </table>
  </body>
 </html>
